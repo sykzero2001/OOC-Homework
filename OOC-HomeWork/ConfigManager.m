@@ -1,4 +1,4 @@
-//
+ //
 //  ConfigManager.m
 //  OOC-HomeWork
 //
@@ -8,11 +8,10 @@
 
 #import "ConfigManager.h"
 #import "Configs.h"
-#import "ToolClass.h"
 
 @implementation ConfigManager
--(void)processConfigs{
-    id configAll = [ToolClass getJsonValue:@"Configs" withType:@"json"];
+-(void)processJsonConfig{
+    id configAll = [self getJsonValue:@"Configs" withType:@"json"];
     NSArray *jsonArray = configAll[@"configs"];
     self.configs = [@[] mutableCopy];
     for (id instance in jsonArray)

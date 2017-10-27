@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JsonManager.h"
 
-@interface ScheduleManager : NSObject
+@interface ScheduleManager :JsonManager
 @property(strong, nonatomic) NSMutableArray *schedules;
 @property(nonatomic) int count;
--(void)processSchedules;
 @end

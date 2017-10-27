@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE6383561FA2CE51001D70A2 /* MyBackupService.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6383551FA2CE51001D70A2 /* MyBackupService.m */; };
+		FE6383591FA2CFF4001D70A2 /* JsonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6383581FA2CFF4001D70A2 /* JsonManager.m */; };
 		FE7C3E281F9852BF007501DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E271F9852BF007501DA /* main.m */; };
 		FE7C3E2B1F9852BF007501DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E2A1F9852BF007501DA /* AppDelegate.m */; };
 		FE7C3E2E1F9852BF007501DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E2D1F9852BF007501DA /* ViewController.m */; };
@@ -21,10 +23,13 @@
 		FE7C3E4A1F986F7E007501DA /* Schedules.json in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E401F9854DC007501DA /* Schedules.json */; };
 		FE7C3E4D1F987CB1007501DA /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E4C1F987CB1007501DA /* Schedule.m */; };
 		FE7C3E501F987CC0007501DA /* ScheduleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E4F1F987CC0007501DA /* ScheduleManager.m */; };
-		FE7C3E531F987E0D007501DA /* ToolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7C3E521F987E0D007501DA /* ToolClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE6383541FA2CE51001D70A2 /* MyBackupService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBackupService.h; sourceTree = "<group>"; };
+		FE6383551FA2CE51001D70A2 /* MyBackupService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBackupService.m; sourceTree = "<group>"; };
+		FE6383571FA2CFF4001D70A2 /* JsonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsonManager.h; sourceTree = "<group>"; };
+		FE6383581FA2CFF4001D70A2 /* JsonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsonManager.m; sourceTree = "<group>"; };
 		FE7C3E231F9852BF007501DA /* OOC-HomeWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OOC-HomeWork.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7C3E271F9852BF007501DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE7C3E291F9852BF007501DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +50,6 @@
 		FE7C3E4C1F987CB1007501DA /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 		FE7C3E4E1F987CC0007501DA /* ScheduleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleManager.h; sourceTree = "<group>"; };
 		FE7C3E4F1F987CC0007501DA /* ScheduleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleManager.m; sourceTree = "<group>"; };
-		FE7C3E511F987E0D007501DA /* ToolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolClass.h; sourceTree = "<group>"; };
-		FE7C3E521F987E0D007501DA /* ToolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +116,10 @@
 				FE7C3E4C1F987CB1007501DA /* Schedule.m */,
 				FE7C3E4E1F987CC0007501DA /* ScheduleManager.h */,
 				FE7C3E4F1F987CC0007501DA /* ScheduleManager.m */,
-				FE7C3E511F987E0D007501DA /* ToolClass.h */,
-				FE7C3E521F987E0D007501DA /* ToolClass.m */,
+				FE6383541FA2CE51001D70A2 /* MyBackupService.h */,
+				FE6383551FA2CE51001D70A2 /* MyBackupService.m */,
+				FE6383571FA2CFF4001D70A2 /* JsonManager.h */,
+				FE6383581FA2CFF4001D70A2 /* JsonManager.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -204,13 +209,14 @@
 			files = (
 				FE7C3E491F986F7E007501DA /* Configs.json in Sources */,
 				FE7C3E4A1F986F7E007501DA /* Schedules.json in Sources */,
-				FE7C3E531F987E0D007501DA /* ToolClass.m in Sources */,
 				FE7C3E4D1F987CB1007501DA /* Schedule.m in Sources */,
 				FE7C3E501F987CC0007501DA /* ScheduleManager.m in Sources */,
 				FE7C3E481F9857D4007501DA /* ConfigManager.m in Sources */,
 				FE7C3E2E1F9852BF007501DA /* ViewController.m in Sources */,
 				FE7C3E451F985583007501DA /* Configs.m in Sources */,
 				FE7C3E2B1F9852BF007501DA /* AppDelegate.m in Sources */,
+				FE6383591FA2CFF4001D70A2 /* JsonManager.m in Sources */,
+				FE6383561FA2CE51001D70A2 /* MyBackupService.m in Sources */,
 				FE7C3E281F9852BF007501DA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

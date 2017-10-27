@@ -7,11 +7,10 @@
 //
 
 #import "ScheduleManager.h"
-#import "ToolClass.h"
 #import "Schedule.h"
 @implementation ScheduleManager
--(void)processSchedules{
-    id scheduleAll = [ToolClass getJsonValue:@"Schedules" withType:@"json"];
+-(void)processJsonConfig{
+    id scheduleAll = [self getJsonValue:@"Schedules" withType:@"json"];
     NSArray *jsonArray = scheduleAll[@"schedules"];
     self.schedules = [@[] mutableCopy];
     for (id instance in jsonArray)

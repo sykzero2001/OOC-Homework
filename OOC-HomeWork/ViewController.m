@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ConfigManager.h"
-#import "ScheduleManager.h"
+#import "MyBackupService.h"
 
 @interface ViewController ()
 
@@ -19,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 // 執行建立物件程序
-    ConfigManager *configManger = [ConfigManager alloc];
-    [configManger processConfigs];
-    ScheduleManager *scheduleManger = [ScheduleManager alloc];
-    [scheduleManger processSchedules];
+    MyBackupService *backUp = [MyBackupService alloc];
+    [backUp myBackupService];
+    [backUp processJsonConfigs];
+ 
     // Do any additional setup after loading the view, typically from a nib.
 }
 
